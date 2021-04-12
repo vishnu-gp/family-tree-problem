@@ -239,7 +239,7 @@ class Person
         }
         // Wifes of siblings
         foreach($this->getSiblings(false) as $sibling){
-            if($sibling->gender == 'Male')
+            if($sibling->gender == 'Male' &&  isset($sibling->spouse))
                 $relations[] = $sibling->spouse->name;
         }
 
@@ -262,7 +262,7 @@ class Person
         }
         // Husbands of siblings
         foreach($this->getSiblings(false) as $sibling){
-            if($sibling->gender == 'Female')
+            if($sibling->gender == 'Female' && isset($sibling->spouse))
                 $relations[] = $sibling->spouse->name;
         }
 
@@ -320,7 +320,7 @@ class Person
     {
         $relations = [];
         if(isset($this->mother->children)){
-            foreach ($this->mother->mother->children as $person){
+            foreach ($this->mother->children as $person){
                 if($person->name != $this->name)
                     $relations[] = $returnNameArray ? $person->name : $person;
             }

@@ -65,7 +65,7 @@ class FamilyTree
      */
     private function addChild($motherName, $childName, $childGender)
     {
-        $mother = $this->searchFamilyPerson($motherName, $this->root);
+        $mother = $this->searchFamilyPerson($motherName, $this->root, false);
         if($mother){
             $child = new Person($childName, $childGender);
             if($mother->giveBirthTo($child))
@@ -113,6 +113,8 @@ class FamilyTree
         if($treeParent->getGender() == 'Female'){
             if($treeParent->getName() == $personName)
                 return $treeParent;
+            else if(!$femaleOnly && !is_null($treeParent->getSpouse()) && $personName == $treeParent->getSpouse()->getName())
+                return $treeParent->getSpouse();
             else if(count($treeParent->getChildren())){
                 foreach($treeParent->getChildren() as $child){
                     $result = $this->searchFamilyPerson($personName, $child, $femaleOnly);

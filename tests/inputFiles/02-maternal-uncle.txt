@@ -1,0 +1,3 @@
+GET_RELATIONSHIP Asva Maternal-Uncle
+GET_RELATIONSHIP Jnki Maternal-Uncle
+GET_RELATIONSHIP InvalidUser Maternal-Uncle

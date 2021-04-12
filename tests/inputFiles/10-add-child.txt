@@ -1,0 +1,4 @@
+ADD_CHILD Chit Menaka Female
+ADD_CHILD Amba Scania Female
+ADD_CHILD Satvy Rambha Female
+ADD_CHILD Loki Urvasi Female

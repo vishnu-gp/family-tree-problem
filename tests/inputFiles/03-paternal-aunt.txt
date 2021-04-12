@@ -1,0 +1,3 @@
+GET_RELATIONSHIP Vila Paternal-Aunt
+GET_RELATIONSHIP Laki Paternal-Aunt
+GET_RELATIONSHIP InvalidUser Paternal-Aunt

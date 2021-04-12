@@ -1,0 +1,5 @@
+GET_RELATIONSHIP Satya Daughter
+GET_RELATIONSHIP Vyan Daughter
+GET_RELATIONSHIP Vich Daughter
+GET_RELATIONSHIP Asva Daughter
+GET_RELATIONSHIP InvalidUser Daughter

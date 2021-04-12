@@ -13,4 +13,3 @@ foreach (glob(dirname(__FILE__) . DIRECTORY_SEPARATOR . "inputFiles" . DIRECTORY
     }
     echo PHP_EOL . PHP_EOL . "Completed test with input file: " . basename($filename) . PHP_EOL . PHP_EOL;
 }
-

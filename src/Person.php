@@ -43,7 +43,7 @@ class Person
         $this->children = [];
     }
 
-        /**
+    /**
      * Getter function for name
      * @return string
      */
